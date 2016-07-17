@@ -38,8 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  <li><a href="#home" class="scroll">Home</a></li>
 									  <li><a href="#about" class="scroll">About</a></li>
 									  <li><a href="#services" class="scroll">Services</a></li>
-									  <li><a href="#features" class="scroll">Features</a></li>
-									   <li><a href="#mail" class="scroll">Contact Us</a></li>
+									    <li><a href="#mail" class="scroll">Contact Us</a></li>
 									</ul>
 								  </nav>
 								</div>
@@ -62,6 +61,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!-- container -->
 				<div class="container">
 					<div class="col-md-5 slid">
+						<!--- banner Slider starts Here --->
+							<script src="js/responsiveslides.min.js"></script>
+						 <script>
+							// You can also use "$(window).load(function() {"
+							$(function () {
+							  // Slideshow 4
+							  $("#slider4").responsiveSlides({
+								auto: true,
+								pager: true,
+								nav: true,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+								  $('.events').append("<li>before event fired.</li>");
+								},
+								after: function () {
+								  $('.events').append("<li>after event fired.</li>");
+								}
+							  });
+						
+							});
+						  </script>
+						<!----//End-slider-script---->
 						<div  id="top" class="callbacks_container">
 							<ul class="rslides" id="slider4">
 								<li>
@@ -113,7 +135,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="banner-text">
 					<h3>Services</h3>
 					<p> We are redefining how you use delivery services, it's not just for companies, Its for eveyone!. The platform will crowdsource your everyday deliveries and errands at an affordable cost</p>
-				</div>
+				</div>	
 			</div>
 			<!-- //container -->
 		</div>
@@ -131,6 +153,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- //container -->
 		</div>
 		<!-- //about -->
+		<!-- mail -->
 		<div id="mail" class="mail">
 			<!-- container -->
 			<div class="container">
